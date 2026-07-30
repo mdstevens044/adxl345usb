@@ -35,7 +35,7 @@ ap = argparse.ArgumentParser(
           * stop      by:  • timeout (-t)  • or sending 'q'+'Enter' to stdin
     """))
 
-ap.add_argument("-p", "--port", default="/dev/ttyACM1", help="serial device")
+ap.add_argument("-p", "--port", default="/dev/ttyACM0", help="serial device")
 ap.add_argument("-f", "--freq", type=int, default=250, help="sampling rate 1-3200 Hz")
 ap.add_argument("-t", "--time", type=int, default=0,   help="capture seconds (0 = until Q)")
 ap.add_argument("-s", "--save", metavar="FILE", help="CSV output file")
